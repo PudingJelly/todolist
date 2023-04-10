@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    font-size: 18px;
+    background: #f6f6f6;
+    height: 100vh;
+    position: relative;
+}
+
+.wrapper .todolist-box {
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    overflow: auto;    
+}
+
+.wrapper .todolist-box .header {
+    width: 100%;
+    background: skyblue;
+}
+
+.wrapper .todolist-box .header .title {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.wrapper .todolist-box .header .inputbox {
+    background: gray;
+    height: 30px;
+    outline: none;
+    display: flex;
+}
+
+#todo-input {
+    background: orangered;
+    width: 87%;
+    border: 0px;
+    height: 100%;   
+}
+
+.wrapper .todolist-box .header .inputbox div {
+    width: 13%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.lnr-plus-circle {
+    color: white;
+}
+
+.todolist{
+    width: 100%;
+}
+
+.todolist ul {
+    display: flex;
+    padding: 10px 5px 10px 10px;
+}
+.todolist ul li:first-child {
+    width: 10%;
+}
+
+.todolist ul li:nth-child(2) {
+    width: 70%;
+    margin-left: 5%;
+}
+.todolist ul li:nth-child(3) {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+}
+.todolist ul li:last-child {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
